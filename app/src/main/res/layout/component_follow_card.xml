@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="80dp"
+    android:clipToPadding="true"
+    app:cardBackgroundColor="@color/light_blue"
+    app:cardCornerRadius="8dp"
+    app:cardPreventCornerOverlap="false"
+    app:contentPadding="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_bg_icon"
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_marginEnd="-24dp"
+            android:layout_marginBottom="-24dp"
+            android:rotation="-30"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile_outline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="#236041" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_follow_card_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_medium"
+                android:text="@string/placeholder_label"
+                android:textColor="@android:color/white"
+                android:textSize="11sp"
+                android:textStyle="normal" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:shimmer_clip_to_children="false"
+                app:shimmer_colored="true"
+                app:shimmer_base_color="@color/shimmer_base_color"
+                app:shimmer_highlight_color="@color/shimmer_highlight_color"
+                app:shimmer_base_alpha="1"
+                >
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_semibold"
+                android:includeFontPadding="false"
+                android:text="@string/placeholder_null"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
