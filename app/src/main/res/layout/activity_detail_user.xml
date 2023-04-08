@@ -13,8 +13,9 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:layout_scrollFlags="scroll|enterAlways"
-            app:subtitleTextColor="@color/white"
-            app:titleTextColor="@color/white">
+            app:subtitleTextColor="@color/text_primary_color"
+            app:titleTextColor="@color/text_primary_color"
+            >
             <com.facebook.shimmer.ShimmerFrameLayout
                 android:id="@+id/shimmer_tv_name"
                 android:layout_width="wrap_content"
@@ -34,10 +35,19 @@
                     android:layout_gravity="center"
                     android:fontFamily="@font/inter"
                     android:text="@string/placeholder_github_name"
-                    android:textColor="@android:color/white"
+                    android:textColor="@color/text_primary_color"
                     android:textSize="20sp"
                     />
             </com.facebook.shimmer.ShimmerFrameLayout>
+            <ImageButton
+                android:id="@+id/btn_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_love_outline"
+                android:layout_marginEnd="24dp"
+                 />
         </androidx.appcompat.widget.Toolbar>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -137,15 +147,16 @@
                 android:id="@+id/tabs_detail_follow"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/dark_blue_500"
+                android:background="@color/background_color"
                 app:tabIndicatorColor="@color/blue_200"
                 app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
-                app:tabTextColor="@android:color/white" />
+                app:tabTextColor="@color/text_primary_color" />
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/vp_detail_follow"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@color/secondary_background_color"
                 android:paddingHorizontal="8dp" />
         </LinearLayout>
 

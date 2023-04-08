@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.SplashActivity"
+    tools:context=".ui.view.splash.SplashActivity"
     android:background="@color/background_color"
     >
 
@@ -20,6 +20,7 @@
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
+            app:tint="@color/text_primary_color"
             android:src="@drawable/ic_github" />
 
         <LinearLayout
@@ -35,14 +36,14 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/inter_extralight"
             android:text="@string/main_toolbar_github"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_primary_color"
             android:textSize="20sp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:text="@string/main_toolbar_user"
-            android:textColor="@android:color/white"
+            android:textColor="@color/text_primary_color"
             android:textSize="20sp"
             android:textStyle="bold" />
         </LinearLayout>

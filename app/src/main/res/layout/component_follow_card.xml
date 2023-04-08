@@ -5,7 +5,7 @@
     android:layout_width="160dp"
     android:layout_height="80dp"
     android:clipToPadding="true"
-    app:cardBackgroundColor="@color/light_blue"
+    app:cardBackgroundColor="@color/follow_card_bg_color"
     app:cardCornerRadius="8dp"
     app:cardPreventCornerOverlap="false"
     app:contentPadding="0dp">
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/inter_medium"
                 android:text="@string/placeholder_label"
-                android:textColor="@android:color/white"
+                android:textColor="@color/text_primary_color"
                 android:textSize="11sp"
                 android:textStyle="normal" />
 
@@ -63,7 +63,7 @@
                 android:fontFamily="@font/inter_semibold"
                 android:includeFontPadding="false"
                 android:text="@string/placeholder_null"
-                android:textColor="@android:color/white"
+                android:textColor="@color/text_primary_color"
                 android:textSize="24sp"
                 android:textStyle="bold" />
             </com.facebook.shimmer.ShimmerFrameLayout>

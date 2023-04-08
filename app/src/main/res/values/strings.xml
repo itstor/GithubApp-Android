@@ -3,14 +3,19 @@
     <string name="main_toolbar_github">Github</string>
     <string name="main_toolbar_user">User</string>
     <string name="action_search">Search</string>
+    <string name="action_favorite">Favorite</string>
     <string name="main_toolbar_search_hint">Search username</string>
-    <string name="main_no_user_found">User Not Found</string>
+    <string name="info_no_user_found">User Not Found</string>
+    <string name="info_empty_result">Empty Result</string>
     <string name="error_message">Something went wrong</string>
     <string name="tab_text_follower">Follower</string>
     <string name="tab_text_following">Following</string>
+    <string name="tab_text_all_users">All Users</string>
+    <string name="tab_text_favorites">Favorites</string>
     <string name="follow_card_following">Following</string>
     <string name="follow_card_follower">Follower</string>
     <string name="placeholder_null">{null}</string>
     <string name="placeholder_github_name">{github name}</string>
     <string name="placeholder_label">{label}</string>
+    <string name="info_no_favorites_yet">No favorites yet.</string>
 </resources>

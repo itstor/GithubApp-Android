@@ -9,6 +9,7 @@
     <color name="blue_700">#FF00599c</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="light_silver">#FFEBEBEB</color>
     <color name="light_blue">#FF2D333B</color>
     <color name="dark_blue_500">#FF22272E</color>
     <color name="gray">#FF1E1E1E</color>
@@ -17,10 +18,19 @@
     <color name="chip_green">#FF42DA3F</color>
     <color name="chip_blue_50">#400075FF</color>
     <color name="chip_blue">#FF0075FF</color>
-    <color name="app_bar_color">@color/dark_blue_500</color>
-    <color name="background_color">@color/dark_blue_500</color>
-    <color name="shimmer_base_color">#FF272D34</color>
-    <color name="shimmer_highlight_color">@color/light_blue</color>
+    <color name="dark_blue_800">#FF1E2227</color>
+    <color name="light_red">#FFFF4343</color>
+    <color name="favorite_btn_color">@color/light_red</color>
+    <color name="unfavorite_btn_color">@color/dark_blue_800</color>
+    <color name="app_bar_color">@color/white</color>
+    <color name="background_color">@color/white</color>
+    <color name="secondary_background_color">@color/light_silver</color>
+    <color name="shimmer_base_color">#DADADA</color>
+    <color name="shimmer_highlight_color">@color/white</color>
+    <color name="user_card_bg">@color/white</color>
     <color name="follow_card_bg_icon_follower">#2200FF57</color>
     <color name="follow_card_bg_icon_following">#320094FF</color>
+    <color name="follow_card_bg_color">@color/light_silver</color>
+    <color name="text_primary_color">@color/dark_blue_800</color>
+    <color name="text_secondary_color">@color/white</color>
 </resources>
